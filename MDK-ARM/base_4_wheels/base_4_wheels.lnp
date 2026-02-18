@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"base_4_wheels\startup_stm32f103xb.o"
+"base_4_wheels\main.o"
+"base_4_wheels\stm32f1xx_it.o"
+"base_4_wheels\stm32f1xx_hal_msp.o"
+"base_4_wheels\stm32f1xx_hal_gpio_ex.o"
+"base_4_wheels\stm32f1xx_hal_tim.o"
+"base_4_wheels\stm32f1xx_hal_tim_ex.o"
+"base_4_wheels\stm32f1xx_hal.o"
+"base_4_wheels\stm32f1xx_hal_rcc.o"
+"base_4_wheels\stm32f1xx_hal_rcc_ex.o"
+"base_4_wheels\stm32f1xx_hal_gpio.o"
+"base_4_wheels\stm32f1xx_hal_dma.o"
+"base_4_wheels\stm32f1xx_hal_cortex.o"
+"base_4_wheels\stm32f1xx_hal_pwr.o"
+"base_4_wheels\stm32f1xx_hal_flash.o"
+"base_4_wheels\stm32f1xx_hal_flash_ex.o"
+"base_4_wheels\stm32f1xx_hal_exti.o"
+"base_4_wheels\stm32f1xx_hal_uart.o"
+"base_4_wheels\system_stm32f1xx.o"
+"base_4_wheels\wheels_and_necessary_inits.o"
+"base_4_wheels\car_status_car_control.o"
+"base_4_wheels\speed_control.o"
+--strict --scatter "base_4_wheels\base_4_wheels.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "base_4_wheels.map" -o base_4_wheels\base_4_wheels.axf
