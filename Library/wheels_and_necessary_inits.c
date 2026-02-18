@@ -11,7 +11,7 @@ void car_move_forward()
 }
 void car_move_backward()
 {
-		car_speed_control(&htim2, TIM_CHANNEL_1, 0);
+	car_speed_control(&htim2, TIM_CHANNEL_1, 0);
     car_speed_control(&htim2, TIM_CHANNEL_2, car_speed);
 
     car_speed_control(&htim2, TIM_CHANNEL_3, 0);
@@ -19,7 +19,7 @@ void car_move_backward()
 }
 void car_turn_left()
 {
-		car_speed_control(&htim2, TIM_CHANNEL_1, 0);
+	car_speed_control(&htim2, TIM_CHANNEL_1, 0);
     car_speed_control(&htim2, TIM_CHANNEL_2, car_speed);
 
     car_speed_control(&htim2, TIM_CHANNEL_3, car_speed);
@@ -27,7 +27,7 @@ void car_turn_left()
 }
 void car_turn_right()
 {
-		car_speed_control(&htim2, TIM_CHANNEL_1, car_speed);
+	car_speed_control(&htim2, TIM_CHANNEL_1, car_speed);
     car_speed_control(&htim2, TIM_CHANNEL_2, 0);
 
     car_speed_control(&htim2, TIM_CHANNEL_3, 0);
@@ -35,7 +35,7 @@ void car_turn_right()
 }
 void car_turn_off()
 {
-		car_speed_control(&htim2, TIM_CHANNEL_1, 0);
+	car_speed_control(&htim2, TIM_CHANNEL_1, 0);
     car_speed_control(&htim2, TIM_CHANNEL_2, 0);
 
     car_speed_control(&htim2, TIM_CHANNEL_3, 0);
